@@ -19,6 +19,18 @@
 #set text(top-edge: "ascender", bottom-edge: "descender")
 ```
 
+## "行"的视觉定义
+
+行的可见高度受 `text` 的 `top-edge` 和 `bottom-edge` 影响。西文默认用 `cap-height` / `baseline`，中文习惯用 `ascender` / `descender`：
+
+```typst
+// 西文习惯（默认）
+#set text(top-edge: "cap-height", bottom-edge: "baseline")
+
+// 中文习惯（推荐）
+#set text(top-edge: "ascender", bottom-edge: "descender")
+```
+
 ## 段距
 
 段间距 > 行高，清晰区分段落。不要用空行控制段距。
@@ -31,6 +43,23 @@
 ```
 
 ⚠️ `#show par: set block(spacing: ..)` 在 Typst 0.12+ 已废弃，用 `#set par(spacing: ..)`。
+
+## Word 行距换算
+
+Word 和 Typst 的行距模型差异很大：
+
+- Word 行距实际是行高，行高 = 文字尺寸 + 行距
+- Word "单倍行距"与文字尺寸的比值依赖字体，在 1.14–1.92 间浮动
+- Typst 的 `1em` 始终等于当前字号
+- Word 有行网格机制，会四舍五入行距
+
+**不要纠结换算公式**。推荐做法：写满一页纸，调整 `leading` 数值，让每页行数与预期一致。
+
+```typst
+// 小四号正文，约 28 行/页
+#set text(size: 12pt)
+#set par(leading: 0.67em)
+```
 
 ## 两端对齐
 
@@ -47,6 +76,17 @@
 ```typst
 #show heading.where(level: 1): set text(tracking: 1.5pt)
 ```
+
+## 分散对齐
+
+在字符间插入等宽空隙：
+
+```typst
+#set text(tracking: 2pt)
+[分散对齐]
+```
+
+⚠️ 正文不建议使用，仅用于标题等短文本。
 
 ## 行内公式与中文间距
 

@@ -64,4 +64,36 @@ SimSun、SimHei、KaiTi、FangSong 没有粗体字形。解决方案：
 | 商业方案/办公 | Source Han Serif SC、Microsoft YaHei | Source Han Sans SC | ≤2 种 |
 | 作品集/文艺 | Source Han Serif SC | 匹配正文气质的设计字体 | ≤2 种 |
 
-> 大段长文优先宋体（衬线），黑体适合短句标题。
+ > 大段长文优先宋体（衬线），黑体适合短句标题。
+
+## 代码块中的 CJK-Latin 间距
+
+代码块内中西文混排时，需配置 `covers` 防止字体回退：
+
+```typst
+#show raw: set text(font: (
+  (name: "Consolas", covers: "latin-in-cjk"),
+  "SimSun",
+))
+```
+
+不要设置 `#show raw: set text(fallback: false)`，会导致中文字符丢失。
+
+## 智能引号字体
+
+中英文字体混用时，智能引号（`""` `''`）可能使用错误的字体。确保 `covers` 配置正确：
+
+```typst
+#set text(font: (
+  (name: "Times New Roman", covers: "latin-in-cjk"),
+  "SimSun"
+))
+```
+
+## 字体回退异常
+
+字体在不同位置"跳动"通常是因为 fallback 规则不明确。解决方法：
+
+1. 始终用 `covers` 明确每个字体覆盖的字符范围
+2. 中文字体的 `region` 须与 `lang` 匹配（`SC` 对应 `region: "cn"`）
+3. 用 `typst fonts` 确认字体确实存在
