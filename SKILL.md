@@ -10,7 +10,7 @@ description: 生成符合中文排版习惯的 Typst（.typ）代码，编辑、
 ```typst
 #set document(title: "我的文档", author: "作者姓名")
 #set page(numbering: "1")
-#set text(lang: "zh", font: ("New Computer Modern", "Noto Serif SC"))
+#set text(lang: "zh", font: ("New Computer Modern", "SimSun"))
 #set par(first-line-indent: (amount: 2em, all: true), justify: true, spacing: 0.75em)
 #title[我的文档]
 
