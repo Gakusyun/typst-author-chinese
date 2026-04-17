@@ -28,8 +28,6 @@ description: 生成符合中文排版习惯的 Typst（.typ）代码，编辑、
 - **排版样式**：参阅 [docs/reference/styling.md](docs/reference/styling.md)
 - **中文排版**：参阅 [references/](references/) 按需查阅
 
-
-
 ## 中文排版核心要点
 
 1. **语言**：`#set text(lang: "zh")` — 开启标点挤压和中文断行
