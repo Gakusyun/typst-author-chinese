@@ -23,10 +23,10 @@ description: 生成符合中文排版习惯的 Typst（.typ）代码，编辑、
 
 ## 工作流程
 
-- **新建项目**：从最小文档开始，参阅 [docs/tutorial/writing-in-typst.md](docs/tutorial/writing-in-typst.md)
-- **编辑文档**：对照 [docs/reference/](docs/reference/) 确认语法
-- **排版样式**：参阅 [docs/reference/styling.md](docs/reference/styling.md)
-- **中文排版**：参阅 [references/](references/) 按需查阅
+1. **新手入门**：使用最小中文文档模板，阅读 [docs/tutorial/writing-in-typst.md](docs/tutorial/writing-in-typst.md) 入门
+2. **语法熟悉**：对照 [docs/reference/syntax.md](docs/reference/syntax.md) 和 [docs/reference/scripting.md](docs/reference/scripting.md) 确认语法
+3. **样式配置**：参考 [docs/reference/styling.md](docs/reference/styling.md) 完成全局样式，参考 [docs/guides/page-setup.md](docs/guides/page-setup.md) 调整页面设置
+4. **中文排版**：查阅 [references/README.md](references/README.md) 索引，按需深入具体章节
 
 ## 文档索引
 
