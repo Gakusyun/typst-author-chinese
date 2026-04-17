@@ -28,19 +28,7 @@ description: 生成符合中文排版习惯的 Typst（.typ）代码，编辑、
 - **排版样式**：参阅 [docs/reference/styling.md](docs/reference/styling.md)
 - **中文排版**：参阅 [references/](references/) 按需查阅
 
-## 文档索引
 
-### Typst 官方文档（`docs/`）
-
-- 语法：`docs/reference/syntax.md`
-- 样式：`docs/reference/styling.md`
-- 脚本：`docs/reference/scripting.md`
-- 页面/表格：`docs/guides/page-setup.md`、`docs/guides/tables.md`
-- 教程：`docs/tutorial/writing-in-typst.md`
-
-### 中文排版参考
-
-详细文档请参阅 [references/README.md](references/README.md)，其中列出了所有中文排版相关主题的索引。
 
 ## 中文排版核心要点
 
