@@ -25,6 +25,12 @@
 | [list.md](list.md) | 无序/有序列表、编号宽度控制、粗体斜体嵌套 |
 | [bibliography.md](bibliography.md) | 基本引用、内联文献、CSL 样式、上标编号、缺失引用处理、常见编译错误 |
 
+## CLI 命令参考
+
+| 文件 | 主题 |
+|------|------|
+| [cli/README.md](cli/README.md) | `typst compile`、`watch`、`init`、`query`、`fonts`、`update`、`completions`、`info` 全部命令详解 |
+
 ## 完整模板
 
 | 文件 | 主题 |

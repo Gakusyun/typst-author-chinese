@@ -28,10 +28,14 @@ description: 生成符合中文排版习惯的 Typst（.typ）代码，编辑、
 3. **样式配置**：参考 [docs/reference/styling.md](docs/reference/styling.md) 完成全局样式，参考 [docs/guides/page-setup.md](docs/guides/page-setup.md) 调整页面设置
 4. **中文排版**：查阅 [references/README.md](references/README.md) 索引，按需深入具体章节
 
+### CLI 命令参考
+
+所有 `typst` 子命令的详细用法见 [references/cli/README.md](references/cli/README.md)。
+
 ## 中文排版核心要点
 
 1. **语言**：`#set text(lang: "zh")` — 开启标点挤压和中文断行
-2. **字体**：先执行 `typst fonts` 确认可用字体，只用确认存在的。优先：宋体 `SimSun`/`Source Han Serif SC`，黑体 `SimHei`/`Source Han Sans SC`，楷体 `KaiTi`，西文 `New Computer Modern`/`Times New Roman`
+2. **字体**：先执行 `typst fonts` 确认可用字体，只用确认存在的。优先：宋体 `SimSun`/`Source Han Serif SC`，黑体 `SimHei`/`Source Han Sans SC`，楷体 `KaiTi`，西文 `New Computer Modern`/`Times New Roman`。更多 CLI 用法见 [references/cli/README.md](references/cli/README.md)
 3. **首行缩进**：`#set par(first-line-indent: (amount: 2em, all: true))` — `all: true` 确保标题后首段也缩进
 4. **行距段距**：`#set par(leading: 1em, spacing: 0.75em)`
 5. **常用包**：`cuti` 0.4.0（伪粗体）、`pointless-size` 0.1.2（中文字号）。标题编号用内置 `numbering()` 即可（支持 `1.1`、`一、`、`第一章` 等模式）
@@ -42,7 +46,7 @@ description: 生成符合中文排版习惯的 Typst（.typ）代码，编辑、
 
 1. **优先查本地文档**再生成代码。训练数据可能过时。
 2. 生成/编辑 `.typ` 后执行**格式化检查**（见下方）。
-3. 可用 `typst compile` 验证编译。
+3. 可用 `typst compile` 验证编译。CLI 详细用法参阅 [references/cli/README.md](references/cli/README.md)。
 
 ### 探测不确定行为
 
