@@ -10,7 +10,7 @@
       "name": "typst-author-chinese",
       "source": "./",
       "description": "Typst 中文排版 SKILL。This is an agent skill designed for the purpose of authoring documents utilising native Chinese typography. ",
-      "version": "1.0.1"
+      "version": "1.0.2"
     }
   ]
 }
