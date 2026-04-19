@@ -94,7 +94,7 @@ echo '#metadata(1 + 2) <probe>' | typst query - "<probe>" --field value --one
 - `(name: "Times New Roman", covers: "latin-in-cjk")`中错把`"Times New Roman"`部分写出一个数组，而非一个字体
 - 把`(name: "Times New Roman", covers: "latin-in-cjk")`错误写成`("Times New Roman", covers: "latin-in-cjk")`
 - margin错误使用`(2.5cm, 2.5cm, 2.5cm, 2.5cm)`而不是`(top: 2.5cm, bottom: 3cm, left: 2.5cm, right: 2.5cm)`
-
+- 超链接错误使用`[xxx](https://xxx)`而不是`#link("https://xxx")[xxx]`
 
 ## 高级功能
 
