@@ -33,14 +33,10 @@ git clone https://github.com/Gakusyun/typst-author-chinese.git ~/.codex/skills/t
 - 中文排版专项支持：字体配置、首行缩进、标点挤压、中英混排
 - 内置完整 Typst 参考文档（语法、样式、脚本、数学等）
 - 编译验证（需 `typst`）
-- 格式化检查（需 `typstyle`）
 
 ## 验证命令
 
 ```bash
-# 格式化检查（需要 typstyle）
-typstyle --check <file.typ>
-
 # 编译验证（需要 typst）
 typst compile <file.typ>
 ```

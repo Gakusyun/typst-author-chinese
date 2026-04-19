@@ -62,12 +62,6 @@ echo '#metadata(1 + 2) <probe>' | typst query - "<probe>" --field value --one
 
 参见 [docs/reference/introspection/query.md](docs/reference/introspection/query.md) 和 [docs/reference/introspection/metadata.md](docs/reference/introspection/metadata.md)。
 
-### 格式化检查
-
-1. `typstyle` 不可用则跳过
-2. 每次修改 `.typ` 后运行 `typstyle --check <file>`
-3. 仅对当前编辑的代码使用 `typstyle -i <file>` 格式化
-4. 格式化影响未修改代码时停下来询问
 
 ## Quick syntax
 
