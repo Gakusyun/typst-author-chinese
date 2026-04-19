@@ -38,7 +38,7 @@ description: 生成符合中文排版习惯的 Typst（.typ）代码，编辑、
 ## 中文排版核心要点
 
 1. **语言**：`#set text(lang: "zh")` — 开启标点挤压和中文断行
-2. **字体**：先执行 `typst fonts` 确认可用字体，只用确认存在的。优先：宋体 `SimSun`/`Source Han Serif SC`，黑体 `SimHei`/`Source Han Sans SC`，楷体 `KaiTi`，西文 `Times New Roman`/`New Computer Modern`。
+2. **字体**：先执行 `typst fonts` 确认可用字体，只用确认存在的。优先：宋体 `SimSun`/`Source Han Serif`，黑体 `SimHei`/`Source Han Sans`，楷体 `KaiTi`，西文 `Times New Roman`/`New Computer Modern`。
 3. **首行缩进**：`#set par(first-line-indent: (amount: 2em, all: true))` — `all: true` 确保标题后首段也缩进
 4. **行距段距**：`#set par(leading: 0.75em, spacing: 1em)` 好看的排版需要段间距大于行间距。
 5. **常用包**：`cuti` 0.4.0（伪粗体）、`pointless-size` 0.1.2（中文字号）。
@@ -94,9 +94,13 @@ echo '#metadata(1 + 2) <probe>' | typst query - "<probe>" --field value --one
 - `prod`（不存在的符号，应用 `product`）
 - 猜测字体名而不执行 `typst fonts` 验证
 - 忘记 `lang: "zh"` 或 `first-line-indent: (amount: 2em, all: true)`
-- Typst中没有`---`作为分隔线
+- 在Typst中错误使用`---`作为分隔线
+- 在Typst中错误使用`>`作为引用
 - 导入第三方包使用`#import "@preview/pointless-size:0.1.2": zh, zihao`
-- `(name: "Times New Roman", covers: "latin-in-cjk")`中，只接受一个字体，不接受数组。
+- `(name: "Times New Roman", covers: "latin-in-cjk")`中错把`"Times New Roman"`部分写出一个数组，而非一个字体
+- 把`(name: "Times New Roman", covers: "latin-in-cjk")`错误写成`("Times New Roman", covers: "latin-in-cjk")`
+- margin错误使用`(2.5cm, 2.5cm, 2.5cm, 2.5cm)`而不是`(top: 2.5cm, bottom: 3cm, left: 2.5cm, right: 2.5cm)`
+
 
 ## 高级功能
 

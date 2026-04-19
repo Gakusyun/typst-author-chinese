@@ -48,7 +48,7 @@ SimSun、SimHei、KaiTi、FangSong 没有粗体字形。解决方案：
 ```typst
 #show math.equation: set text(font: (
   "New Computer Modern Math",
-  "Source Han Serif SC",
+  "Source Han Serif",
 ))
 ```
 
@@ -60,9 +60,9 @@ SimSun、SimHei、KaiTi、FangSong 没有粗体字形。解决方案：
 
 | 文档类型 | 正文 | 标题 | 限制 |
 |----------|------|------|------|
-| 公文/论文/正式报告 | FangSong、Source Han Serif SC | Source Han Sans SC | ≤3 种 |
-| 商业方案/办公 | Source Han Serif SC、Microsoft YaHei | Source Han Sans SC | ≤2 种 |
-| 作品集/文艺 | Source Han Serif SC | 匹配正文气质的设计字体 | ≤2 种 |
+| 公文/论文/正式报告 | FangSong、Source Han Serif | Source Han Sans | ≤3 种 |
+| 商业方案/办公 | Source Han Serif、Microsoft YaHei | Source Han Sans | ≤2 种 |
+| 作品集/文艺 | Source Han Serif | 匹配正文气质的设计字体 | ≤2 种 |
 
  > 大段长文优先宋体（衬线），黑体适合短句标题。
 

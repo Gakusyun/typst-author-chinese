@@ -12,10 +12,10 @@
 #set text(lang: "zh")
 
 #set page(paper: "a4", margin: (top: 25mm, bottom: 20mm, inside: 28mm, outside: 20mm))
-#set text(font: "Source Han Serif SC", size: zh("小四"))
+#set text(font: "Source Han Serif", size: zh("小四"))
 #set par(first-line-indent: (amount: 2em, all: true), justify: true, leading: 0.67em, spacing: 0.75em)
 
-#show heading: set text(font: "Source Han Sans SC")
+#show heading: set text(font: "Source Han Sans")
 #show heading.where(level: 1): set text(size: zh("二号"), weight: "bold")
 #show heading.where(level: 1): set block(above: 24pt, below: 18pt)
 #show heading.where(level: 2): set text(size: zh("小三"), weight: "bold")
@@ -32,10 +32,10 @@
 #set text(lang: "zh")
 
 #set page(paper: "a4", margin: (top: 25mm, bottom: 20mm, inside: 28mm, outside: 20mm))
-#set text(font: "Source Han Serif SC", size: 12pt)
+#set text(font: "Source Han Serif", size: 12pt)
 #set par(first-line-indent: (amount: 2em, all: true), justify: true, leading: 0.67em, spacing: 0.75em)
 
-#show heading: set text(font: "Source Han Sans SC")
+#show heading: set text(font: "Source Han Sans")
 #show heading.where(level: 1): set text(size: 22pt, weight: "bold")
 #show heading.where(level: 1): set block(above: 24pt, below: 18pt)
 #show heading.where(level: 2): set text(size: 15pt, weight: "bold")
@@ -55,7 +55,7 @@
 #set text(lang: "zh")
 
 #set page(paper: "a4", margin: (top: 25mm, bottom: 20mm, left: 25mm, right: 20mm))
-#set text(font: "Source Han Sans SC", size: zh("小四"))
+#set text(font: "Source Han Sans", size: zh("小四"))
 #set par(first-line-indent: (amount: 2em, all: true), justify: true, leading: 0.67em, spacing: 0.75em)
 
 #show heading.where(level: 1): set text(size: zh("小二"), weight: "bold")
@@ -73,7 +73,7 @@
 #set text(lang: "zh")
 
 #set page(paper: "a4", margin: (top: 25mm, bottom: 20mm, left: 25mm, right: 20mm))
-#set text(font: "Source Han Sans SC", size: 12pt)
+#set text(font: "Source Han Sans", size: 12pt)
 #set par(first-line-indent: (amount: 2em, all: true), justify: true, leading: 0.67em, spacing: 0.75em)
 
 #show heading.where(level: 1): set text(size: 18pt, weight: "bold")
@@ -97,7 +97,7 @@
 #set text(font: "FangSong", size: zh("三号"))
 #set par(first-line-indent: (amount: 2em, all: true), justify: true, leading: 0.75em)
 
-#show heading: set text(font: "Source Han Sans SC")
+#show heading: set text(font: "Source Han Sans")
 #show heading.where(level: 1): set text(size: zh("二号"), weight: "bold")
 #set page(numbering: "1")
 ```
@@ -112,7 +112,7 @@
 #set text(font: "FangSong", size: 16pt)
 #set par(first-line-indent: (amount: 2em, all: true), justify: true, leading: 0.75em)
 
-#show heading: set text(font: "Source Han Sans SC")
+#show heading: set text(font: "Source Han Sans")
 #show heading.where(level: 1): set text(size: 22pt, weight: "bold")
 #set page(numbering: "1")
 ```
