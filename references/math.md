@@ -61,17 +61,16 @@ $ h(x) $
 公式中默认使用楷体显示中文。Typst 0.13+ 可通过 `covers` 精确控制：
 
 ```typst
-// Typst 0.14：数学+中文统一（推荐）
 #show math.equation: set text(font: (
   "New Computer Modern Math",
-  "Source Han Serif SC",
+  "Source Han Serif",
 ))
 
-// Typst 0.13：需用 covers 分离
+// 或者：
+
 #show math.equation: set text(font: (
-  (name: "Source Han Serif SC", covers: "latin-in-cjk"),
-  "New Computer Modern Math",
-  "Source Han Serif SC",
+  (name: "New Computer Modern Math", covers: "latin-in-cjk"),
+  "Source Han Serif",
 ))
 ```
 

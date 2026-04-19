@@ -1,6 +1,6 @@
 # 字号规范
 
-## 方式一：pointless-size 包（推荐）
+## 方式一：pointless-size 包（强烈推荐）
 
 ```typst
 #import "@preview/pointless-size:0.1.2": zh, zihao

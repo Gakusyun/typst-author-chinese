@@ -81,10 +81,3 @@ Typst 不自动在行内公式与中文间插入间距：
 }
 ```
 
-## 代码块两端对齐
-
-Typst 0.13+ 已默认修复。旧版本：
-
-```typst
-#show raw.where(block: true): set par(justify: false)
-```

@@ -10,8 +10,8 @@ description: 生成符合中文排版习惯的 Typst（.typ）代码，编辑、
 ```typst
 #set document(title: "我的文档", author: "作者姓名")
 #set page(numbering: "1")
-#set text(lang: "zh", font: ("New Computer Modern", "SimSun"))
-#set par(first-line-indent: (amount: 2em, all: true), justify: true, spacing: 0.75em)
+#set text(lang: "zh", font: ((name: "Times New Roman", covers: "latin-in-cjk"),"SimSun"))
+#set par(first-line-indent: (amount: 2em, all: true), justify: true)
 #title[我的文档]
 
 = 第一章
@@ -35,10 +35,10 @@ description: 生成符合中文排版习惯的 Typst（.typ）代码，编辑、
 ## 中文排版核心要点
 
 1. **语言**：`#set text(lang: "zh")` — 开启标点挤压和中文断行
-2. **字体**：先执行 `typst fonts` 确认可用字体，只用确认存在的。优先：宋体 `SimSun`/`Source Han Serif SC`，黑体 `SimHei`/`Source Han Sans SC`，楷体 `KaiTi`，西文 `New Computer Modern`/`Times New Roman`。更多 CLI 用法见 [references/cli/README.md](references/cli/README.md)
+2. **字体**：先执行 `typst fonts` 确认可用字体，只用确认存在的。优先：宋体 `SimSun`/`Source Han Serif SC`，黑体 `SimHei`/`Source Han Sans SC`，楷体 `KaiTi`，西文 `Times New Roman`/`New Computer Modern`。
 3. **首行缩进**：`#set par(first-line-indent: (amount: 2em, all: true))` — `all: true` 确保标题后首段也缩进
 4. **行距段距**：`#set par(leading: 0.75em, spacing: 1em)` 好看的排版需要短间距大于行间距。
-5. **常用包**：`cuti` 0.4.0（伪粗体）、`pointless-size` 0.1.2（中文字号）。标题编号用内置 `numbering()` 即可（支持 `1.1`、`一、`、`第一章` 等模式）
+5. **常用包**：`cuti` 0.4.0（伪粗体）、`pointless-size` 0.1.2（中文字号）。
 
 → 详细用法和完整模板请查阅 [references/README.md](references/README.md)
 
@@ -46,7 +46,8 @@ description: 生成符合中文排版习惯的 Typst（.typ）代码，编辑、
 
 1. **优先查本地文档**再生成代码。训练数据可能过时。
 2. 生成/编辑 `.typ` 后执行**格式化检查**（见下方）。
-3. 可用 `typst compile` 验证编译。CLI 详细用法参阅 [references/cli/README.md](references/cli/README.md)。
+3. 可用 `typst compile` 验证编译。
+4. CLI 详细用法参阅 [references/cli/README.md](references/cli/README.md)。
 
 ### 探测不确定行为
 
