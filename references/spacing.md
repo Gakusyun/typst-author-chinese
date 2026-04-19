@@ -2,15 +2,16 @@
 
 ## 行距
 
-行高 = leading + 文字尺寸。中文黄金行高为字号 1.5–1.75 倍。
+中文黄金行高为字号 1.5–1.75 倍。`1em` 等于当前字号，直接写倍数即可：
 
 ```typst
-// 小四号（12pt）正文：行高约 20pt
-#set par(leading: 0.67em)
+// 小四号（12pt）正文
+#set text(size: 12pt)
+#set par(leading: 1.5em)
 
-// 五号（10.5pt）正文：行高约 17pt
+// 五号（10.5pt）正文
 #set text(size: 10.5pt)
-#set par(leading: 0.62em)
+#set par(leading: 1.5em)
 ```
 
 设置 `top-edge` / `bottom-edge` 使文字外框更接近中文习惯：
@@ -42,24 +43,6 @@
 #show heading.where(level: 2): set block(above: 12pt, below: 6pt)
 ```
 
-⚠️ `#show par: set block(spacing: ..)` 在 Typst 0.12+ 已废弃，用 `#set par(spacing: ..)`。
-
-## Word 行距换算
-
-Word 和 Typst 的行距模型差异很大：
-
-- Word 行距实际是行高，行高 = 文字尺寸 + 行距
-- Word "单倍行距"与文字尺寸的比值依赖字体，在 1.14–1.92 间浮动
-- Typst 的 `1em` 始终等于当前字号
-- Word 有行网格机制，会四舍五入行距
-
-**不要纠结换算公式**。推荐做法：写满一页纸，调整 `leading` 数值，让每页行数与预期一致。
-
-```typst
-// 小四号正文，约 28 行/页
-#set text(size: 12pt)
-#set par(leading: 0.67em)
-```
 
 ## 两端对齐
 

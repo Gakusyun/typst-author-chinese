@@ -37,7 +37,7 @@ description: 生成符合中文排版习惯的 Typst（.typ）代码，编辑、
 1. **语言**：`#set text(lang: "zh")` — 开启标点挤压和中文断行
 2. **字体**：先执行 `typst fonts` 确认可用字体，只用确认存在的。优先：宋体 `SimSun`/`Source Han Serif SC`，黑体 `SimHei`/`Source Han Sans SC`，楷体 `KaiTi`，西文 `New Computer Modern`/`Times New Roman`。更多 CLI 用法见 [references/cli/README.md](references/cli/README.md)
 3. **首行缩进**：`#set par(first-line-indent: (amount: 2em, all: true))` — `all: true` 确保标题后首段也缩进
-4. **行距段距**：`#set par(leading: 1em, spacing: 0.75em)`
+4. **行距段距**：`#set par(leading: 0.75em, spacing: 1em)` 好看的排版需要短间距大于行间距。
 5. **常用包**：`cuti` 0.4.0（伪粗体）、`pointless-size` 0.1.2（中文字号）。标题编号用内置 `numbering()` 即可（支持 `1.1`、`一、`、`第一章` 等模式）
 
 → 详细用法和完整模板请查阅 [references/README.md](references/README.md)
