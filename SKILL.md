@@ -41,7 +41,7 @@ description: 生成符合中文排版习惯的 Typst（.typ）代码，编辑、
 1. **语言**：`#set text(lang: "zh")` — 开启标点挤压和中文断行
 2. **字体**：优先使用：宋体 `SimSun`/`Source Han Serif`，黑体 `SimHei`/`Source Han Sans`，楷体 `KaiTi`，西文 `Times New Roman`/`New Computer Modern`，如果遇到报错，执行 `typst fonts` 确认可用字体。
 3. **首行缩进**：`#set par(first-line-indent: (amount: 2em, all: true))` — `all: true` 确保标题后首段也缩进
-4. **行距段距**：`#set par(leading: 0.75em, spacing: 1em)` **段间距 > 行间距 > 字间距**
+4. **行距段距**：推荐使用 Typst 默认值，无需显式设置。如有特殊需求（如设置 1.25 倍行距），参考 [references/spacing.md](references/spacing.md)
 5. **常用包**：`cuti` 0.4.0（伪粗体）、`pointless-size` 0.1.2（中文字号）
 
 → 详细用法和完整模板请查阅 [references/README.md](references/README.md)。references 中未覆盖的函数请查阅 [references/docs-index.md](references/docs-index.md)。
